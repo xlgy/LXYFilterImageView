@@ -1,2 +1,2 @@
 # LXYFilterImageView
-图片滤镜封装空间
+图片滤镜封装控件
