@@ -7,12 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "LXYFuterView.h"
-#import "FilterInfo.h"
+#import "LXYFilterView.h"
 
 
-@interface ViewController ()<LXYFuterViewDelegate>{
-    LXYFuterView *mainCollectionView;
+@interface ViewController ()<LXYFilterViewDelegate>{
+    LXYFilterView *mainCollectionView;
     UIImageView *ivCurrent;
 }
 
@@ -26,14 +25,14 @@
 
 
     ivCurrent = [UIImageView new];
-    ivCurrent.frame = CGRectMake(0, 20, self.view.bounds.size.width, 200);
+    ivCurrent.frame = CGRectMake(0, 50, self.view.bounds.size.width, 200);
     ivCurrent.contentMode = UIViewContentModeScaleAspectFit;
-    ivCurrent.image = [UIImage imageNamed:@"demo.jpg"];
+    ivCurrent.image = [UIImage imageNamed:@"c.jpg"];
     [self.view addSubview:ivCurrent];
 
-    mainCollectionView = [LXYFuterView new];
+    mainCollectionView = [LXYFilterView new];
     mainCollectionView.imCurrent = ivCurrent.image;
-    NSArray *arr =  @[
+    NSArray *filterArr =  @[
                       @"CIColorInvert",
                       @"CIColorMonochrome",
                       @"CIColorPosterize",
@@ -41,18 +40,8 @@
                      ];
 
 
-    NSMutableArray *filterArr = [NSMutableArray array];
-    for (NSString *st in arr) {
 
-
-        FilterInfo *info = [[FilterInfo alloc]initWithFilterTypeName:st WithPlaceHoderImg:[UIImage imageNamed:st]];
-        [filterArr addObject:info];
-    }
-
-
-
-
-    mainCollectionView.arrFilter = filterArr;
+    mainCollectionView.arrFilter = [NSMutableArray arrayWithArray:filterArr];
     mainCollectionView.delegate = self;
     [self.view addSubview:mainCollectionView];
 

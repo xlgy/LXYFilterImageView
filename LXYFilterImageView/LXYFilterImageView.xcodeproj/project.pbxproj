@@ -38,8 +38,15 @@
 		8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */; };
 		8908D6BC1F9F3902005A8EB0 /* CIMaskToAlpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8908D6BB1F9F3902005A8EB0 /* CIMaskToAlpha.png */; };
 		89B38A041FA085DE00C549C3 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89B38A031FA085DE00C549C3 /* demo.jpg */; };
-		89D3A2941FA185C0006769EA /* FilterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2931FA185C0006769EA /* FilterInfo.m */; };
 		89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2A41FA18AAC006769EA /* UIView+Frame.m */; };
+		89D3A2AE1FA1B690006769EA /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A2AD1FA1B690006769EA /* b.jpg */; };
+		89D3A2B01FA1B6FE006769EA /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A2AF1FA1B6FE006769EA /* c.jpg */; };
+		89D3A2B31FA1B991006769EA /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */; };
+		89D3A2C31FA1C8DE006769EA /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */; };
+		89D3A2C41FA1C8DE006769EA /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */; };
+		89D3A2C51FA1C8DE006769EA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */; };
+		89D3A2C61FA1C8DE006769EA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */; };
+		89D3A2C71FA1C8DE006769EA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,14 +103,25 @@
 		8908D6921F9F240B005A8EB0 /* CISepiaTone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CISepiaTone.png; sourceTree = "<group>"; };
 		8908D6931F9F240B005A8EB0 /* CIVignette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIVignette.png; sourceTree = "<group>"; };
 		8908D6941F9F240B005A8EB0 /* CIVignetteEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIVignetteEffect.png; sourceTree = "<group>"; };
-		8908D6B51F9F3279005A8EB0 /* LXYFuterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYFuterView.h; sourceTree = "<group>"; };
+		8908D6B51F9F3279005A8EB0 /* LXYFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYFilterView.h; sourceTree = "<group>"; };
 		8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYFuterView.m; sourceTree = "<group>"; };
 		8908D6BB1F9F3902005A8EB0 /* CIMaskToAlpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIMaskToAlpha.png; sourceTree = "<group>"; };
 		89B38A031FA085DE00C549C3 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
-		89D3A2921FA185C0006769EA /* FilterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterInfo.h; sourceTree = "<group>"; };
-		89D3A2931FA185C0006769EA /* FilterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterInfo.m; sourceTree = "<group>"; };
 		89D3A2A31FA18AAC006769EA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		89D3A2A41FA18AAC006769EA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		89D3A2AD1FA1B690006769EA /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+		89D3A2AF1FA1B6FE006769EA /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
+		89D3A2B11FA1B991006769EA /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		89D3A2B81FA1C8DE006769EA /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		89D3A2BA1FA1C8DE006769EA /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		89D3A2BD1FA1C8DE006769EA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		89D3A2BF1FA1C8DE006769EA /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,10 +217,10 @@
 			children = (
 				89D3A2951FA18AAC006769EA /* Util */,
 				8908D6801F9F240B005A8EB0 /* img */,
-				8908D6B51F9F3279005A8EB0 /* LXYFuterView.h */,
+				8908D6B51F9F3279005A8EB0 /* LXYFilterView.h */,
 				8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */,
-				89D3A2921FA185C0006769EA /* FilterInfo.h */,
-				89D3A2931FA185C0006769EA /* FilterInfo.m */,
+				89D3A2B11FA1B991006769EA /* MyCollectionViewCell.h */,
+				89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */,
 			);
 			path = LXYFilter;
 			sourceTree = "<group>";
@@ -210,6 +228,8 @@
 		8908D6801F9F240B005A8EB0 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				89D3A2AF1FA1B6FE006769EA /* c.jpg */,
+				89D3A2AD1FA1B690006769EA /* b.jpg */,
 				89B38A031FA085DE00C549C3 /* demo.jpg */,
 				8908D6BB1F9F3902005A8EB0 /* CIMaskToAlpha.png */,
 				8908D6811F9F240B005A8EB0 /* CIColorCrossPolynomial.png */,
@@ -239,10 +259,35 @@
 		89D3A2951FA18AAC006769EA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				89D3A2B41FA1C8DE006769EA /* SVProgressHUD */,
 				89D3A2A31FA18AAC006769EA /* UIView+Frame.h */,
 				89D3A2A41FA18AAC006769EA /* UIView+Frame.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		89D3A2B41FA1C8DE006769EA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				89D3A2B71FA1C8DE006769EA /* SVProgressHUD */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		89D3A2B71FA1C8DE006769EA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				89D3A2B81FA1C8DE006769EA /* SVIndefiniteAnimatedView.h */,
+				89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */,
+				89D3A2BA1FA1C8DE006769EA /* SVProgressAnimatedView.h */,
+				89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */,
+				89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */,
+				89D3A2BD1FA1C8DE006769EA /* SVProgressHUD.h */,
+				89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */,
+				89D3A2BF1FA1C8DE006769EA /* SVRadialGradientLayer.h */,
+				89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,10 +393,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D3A2B01FA1B6FE006769EA /* c.jpg in Resources */,
 				8908D6A61F9F240B005A8EB0 /* CISepiaTone.png in Resources */,
 				8908D6591F9F2006005A8EB0 /* LaunchScreen.storyboard in Resources */,
 				8908D6961F9F240B005A8EB0 /* CIColorCube.png in Resources */,
 				8908D6A71F9F240B005A8EB0 /* CIVignette.png in Resources */,
+				89D3A2C51FA1C8DE006769EA /* SVProgressHUD.bundle in Resources */,
 				8908D6A21F9F240B005A8EB0 /* CIPhotoEffectNoir.png in Resources */,
 				8908D6BC1F9F3902005A8EB0 /* CIMaskToAlpha.png in Resources */,
 				8908D69C1F9F240B005A8EB0 /* CIMaximumComponent.png in Resources */,
@@ -364,6 +411,7 @@
 				8908D69E1F9F240B005A8EB0 /* CIPhotoEffectChrome.png in Resources */,
 				8908D6561F9F2006005A8EB0 /* Assets.xcassets in Resources */,
 				8908D6A41F9F240B005A8EB0 /* CIPhotoEffectTonal.png in Resources */,
+				89D3A2AE1FA1B690006769EA /* b.jpg in Resources */,
 				8908D6A81F9F240B005A8EB0 /* CIVignetteEffect.png in Resources */,
 				8908D6A51F9F240B005A8EB0 /* CIPhotoEffectTransfer.png in Resources */,
 				8908D6981F9F240B005A8EB0 /* CIColorInvert.png in Resources */,
@@ -398,10 +446,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8908D6511F9F2006005A8EB0 /* ViewController.m in Sources */,
-				89D3A2941FA185C0006769EA /* FilterInfo.m in Sources */,
+				89D3A2C41FA1C8DE006769EA /* SVProgressAnimatedView.m in Sources */,
+				89D3A2B31FA1B991006769EA /* MyCollectionViewCell.m in Sources */,
+				89D3A2C31FA1C8DE006769EA /* SVIndefiniteAnimatedView.m in Sources */,
 				8908D64E1F9F2006005A8EB0 /* AppDelegate.m in Sources */,
 				8908D64B1F9F2006005A8EB0 /* main.m in Sources */,
+				89D3A2C71FA1C8DE006769EA /* SVRadialGradientLayer.m in Sources */,
 				8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */,
+				89D3A2C61FA1C8DE006769EA /* SVProgressHUD.m in Sources */,
 				89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
