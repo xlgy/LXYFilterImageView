@@ -8,6 +8,7 @@
 
 #import "LXYFuterView.h"
 #import "UIView+Frame.h"
+#import "FilterInfo.h"
 
 
 @implementation LXYFuterView
@@ -28,6 +29,7 @@
 }
 
 
+
 -(void)binView{
 
 
@@ -35,7 +37,50 @@
     self.scvButton.frame = CGRectMake(0, 0, SCREEN_W, 100);
     [self addSubview:self.scvButton];
 
+    [self btnAddAction];
 
+}
+
+-(void)bindModel{
+
+
+    NSArray *arrString = @[
+                           @"CIColorCrossPolynomial",
+                           @"CIColorCube",
+                           @"CIColorCubeWithColorSpace",
+                           @"CIColorInvert",
+                           @"CIColorMonochrome",
+                           @"CIColorPosterize",
+                           @"CIFalseColor",
+                           @"CIMaximumComponent",
+                           @"CIMinimumComponent",
+                           @"CIPhotoEffectChrome",
+                           @"CIPhotoEffectFade",
+                           @"CIPhotoEffectInstant",
+                           @"CIPhotoEffectMono",
+                           @"CIPhotoEffectNoir",
+                           @"CIPhotoEffectProcess",
+                           @"CIPhotoEffectTonal",
+                           @"CIPhotoEffectTransfer",
+                           @"CISepiaTone",
+                           @"CIVignette",
+                           @"CIVignetteEffect"];
+
+    self.arrFilter = [NSMutableArray array];
+
+    for (NSString *st in arrString) {
+
+        FilterInfo *info = [[FilterInfo alloc]initWithFilterTypeName:st WithPlaceHoderImg:[UIImage imageNamed:st]];
+        [self.arrFilter addObject:info];
+
+    }
+}
+
+-(void)btnAddAction {
+
+    for (UIView *view in [self.scvButton subviews]) {
+        [view removeFromSuperview];
+    }
     CGFloat x = 10;
     for (int i=0; i<self.arrFilter.count; i++) {
 
@@ -44,49 +89,42 @@
         btn.frame = CGRectMake(x, 10, 80, 80);
         [btn addTarget:self action:@selector(chooseAction:) forControlEvents:UIControlEventTouchUpInside];
 
-        NSString *filterName = [self.arrFilter objectAtIndex:i];
-        [btn setImage:[UIImage imageNamed:filterName] forState:UIControlStateNormal];
+        FilterInfo *filterName = [self.arrFilter objectAtIndex:i];
+        [btn setImage:[UIImage imageNamed:filterName.filterTypeName] forState:UIControlStateNormal];
         [self.scvButton addSubview:btn];
         x = btn.right + 10;
     }
 
     self.scvButton.contentSize = CGSizeMake(x, 100);
 
-
 }
 
--(void)bindModel{
 
-    self.arrFilter = @[
-                       @"CIColorCrossPolynomial",
-                       @"CIColorCube",
-                       @"CIColorCubeWithColorSpace",
-                       @"CIColorInvert",
-                       @"CIColorMonochrome",
-                       @"CIColorPosterize",
-                       @"CIFalseColor",
-                       @"CIMaximumComponent",
-                       @"CIMinimumComponent",
-                       @"CIPhotoEffectChrome",
-                       @"CIPhotoEffectFade",
-                       @"CIPhotoEffectInstant",
-                       @"CIPhotoEffectMono",
-                       @"CIPhotoEffectNoir",
-                       @"CIPhotoEffectProcess",
-                       @"CIPhotoEffectTonal",
-                       @"CIPhotoEffectTransfer",
-                       @"CISepiaTone",
-                       @"CIVignette",
-                       @"CIVignetteEffect"];
+
+
+-(void)setArrFilter:(NSArray *)arrFilter {
+
+    _arrFilter = [NSMutableArray arrayWithArray:arrFilter];
+
+    [self btnAddAction];
 }
+
+
+
 
 -(void)chooseAction:(UIButton *)btn {
 
-    UIImage *imgResult = [self imageWithImage:self.imCurrent WithFilterName:[self.arrFilter objectAtIndex:btn.tag]];
+
+    FilterInfo *info = [self.arrFilter objectAtIndex:btn.tag];
+    UIImage *imgResult = [self imageWithImage:self.imCurrent WithFilterName:info.filterTypeName];
 
     [self.delegate clickWithFilterImg:imgResult];
 
+
+
+
 }
+
 
 -(UIImage *)imageWithImage:(UIImage *)image WithFilterName:(NSString *)filterName {
 
@@ -118,6 +156,8 @@
     UIImage *rImg = [UIImage imageWithCGImage:resultImage];
 
 
+
+
     return rImg;
 
 }
@@ -125,6 +165,8 @@
 - (UIScrollView *)scvButton {
     if (!_scvButton) {
         _scvButton = [UIScrollView new];
+        _scvButton.showsVerticalScrollIndicator = FALSE;
+        _scvButton.showsHorizontalScrollIndicator = FALSE;
 
     }
     return _scvButton;

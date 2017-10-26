@@ -36,9 +36,10 @@
 		8908D6A71F9F240B005A8EB0 /* CIVignette.png in Resources */ = {isa = PBXBuildFile; fileRef = 8908D6931F9F240B005A8EB0 /* CIVignette.png */; };
 		8908D6A81F9F240B005A8EB0 /* CIVignetteEffect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8908D6941F9F240B005A8EB0 /* CIVignetteEffect.png */; };
 		8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */; };
-		8908D6BA1F9F37B7005A8EB0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D6B91F9F37B7005A8EB0 /* UIView+Frame.m */; };
 		8908D6BC1F9F3902005A8EB0 /* CIMaskToAlpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 8908D6BB1F9F3902005A8EB0 /* CIMaskToAlpha.png */; };
 		89B38A041FA085DE00C549C3 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89B38A031FA085DE00C549C3 /* demo.jpg */; };
+		89D3A2941FA185C0006769EA /* FilterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2931FA185C0006769EA /* FilterInfo.m */; };
+		89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2A41FA18AAC006769EA /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,10 +98,12 @@
 		8908D6941F9F240B005A8EB0 /* CIVignetteEffect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIVignetteEffect.png; sourceTree = "<group>"; };
 		8908D6B51F9F3279005A8EB0 /* LXYFuterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYFuterView.h; sourceTree = "<group>"; };
 		8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYFuterView.m; sourceTree = "<group>"; };
-		8908D6B81F9F37B7005A8EB0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		8908D6B91F9F37B7005A8EB0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		8908D6BB1F9F3902005A8EB0 /* CIMaskToAlpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIMaskToAlpha.png; sourceTree = "<group>"; };
 		89B38A031FA085DE00C549C3 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
+		89D3A2921FA185C0006769EA /* FilterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterInfo.h; sourceTree = "<group>"; };
+		89D3A2931FA185C0006769EA /* FilterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterInfo.m; sourceTree = "<group>"; };
+		89D3A2A31FA18AAC006769EA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		89D3A2A41FA18AAC006769EA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,11 +197,12 @@
 		8908D67C1F9F230E005A8EB0 /* LXYFilter */ = {
 			isa = PBXGroup;
 			children = (
+				89D3A2951FA18AAC006769EA /* Util */,
 				8908D6801F9F240B005A8EB0 /* img */,
 				8908D6B51F9F3279005A8EB0 /* LXYFuterView.h */,
 				8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */,
-				8908D6B81F9F37B7005A8EB0 /* UIView+Frame.h */,
-				8908D6B91F9F37B7005A8EB0 /* UIView+Frame.m */,
+				89D3A2921FA185C0006769EA /* FilterInfo.h */,
+				89D3A2931FA185C0006769EA /* FilterInfo.m */,
 			);
 			path = LXYFilter;
 			sourceTree = "<group>";
@@ -230,6 +234,15 @@
 				8908D6941F9F240B005A8EB0 /* CIVignetteEffect.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		89D3A2951FA18AAC006769EA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				89D3A2A31FA18AAC006769EA /* UIView+Frame.h */,
+				89D3A2A41FA18AAC006769EA /* UIView+Frame.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,10 +398,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8908D6511F9F2006005A8EB0 /* ViewController.m in Sources */,
+				89D3A2941FA185C0006769EA /* FilterInfo.m in Sources */,
 				8908D64E1F9F2006005A8EB0 /* AppDelegate.m in Sources */,
 				8908D64B1F9F2006005A8EB0 /* main.m in Sources */,
-				8908D6BA1F9F37B7005A8EB0 /* UIView+Frame.m in Sources */,
 				8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */,
+				89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

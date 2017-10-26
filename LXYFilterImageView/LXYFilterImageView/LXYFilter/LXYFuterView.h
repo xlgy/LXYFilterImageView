@@ -17,7 +17,7 @@
 
 @interface LXYFuterView : UIView
 
-@property (nonatomic, strong) NSArray *arrFilter;
+@property (nonatomic, strong) NSMutableArray *arrFilter;
 @property (nonatomic, strong) UIScrollView *scvButton;
 @property (nonatomic, strong) UIImage *imCurrent;
 

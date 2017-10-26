@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LXYFuterView.h"
+#import "FilterInfo.h"
 
 
 @interface ViewController ()<LXYFuterViewDelegate>{
@@ -32,6 +33,26 @@
 
     mainCollectionView = [LXYFuterView new];
     mainCollectionView.imCurrent = ivCurrent.image;
+    NSArray *arr =  @[
+                      @"CIColorInvert",
+                      @"CIColorMonochrome",
+                      @"CIColorPosterize",
+                      @"CIFalseColor"
+                     ];
+
+
+    NSMutableArray *filterArr = [NSMutableArray array];
+    for (NSString *st in arr) {
+
+
+        FilterInfo *info = [[FilterInfo alloc]initWithFilterTypeName:st WithPlaceHoderImg:[UIImage imageNamed:st]];
+        [filterArr addObject:info];
+    }
+
+
+
+
+    mainCollectionView.arrFilter = filterArr;
     mainCollectionView.delegate = self;
     [self.view addSubview:mainCollectionView];
 
