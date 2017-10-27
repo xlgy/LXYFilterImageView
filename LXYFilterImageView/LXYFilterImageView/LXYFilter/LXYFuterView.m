@@ -133,11 +133,6 @@
 -(UIImage *)imageWithImage:(UIImage *)image WithFilterName:(NSString *)filterName {
 
 
-
-    [CIFilter filterNamesInCategory:kCICategoryBuiltIn];
-
-
-
     //将image转换成CIImage;
     _inputImage = [CIImage imageWithCGImage:image.CGImage];
 
