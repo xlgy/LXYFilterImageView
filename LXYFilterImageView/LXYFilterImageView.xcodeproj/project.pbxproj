@@ -15,15 +15,8 @@
 		8908D6591F9F2006005A8EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8908D6571F9F2006005A8EB0 /* LaunchScreen.storyboard */; };
 		8908D6641F9F2007005A8EB0 /* LXYFilterImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D6631F9F2007005A8EB0 /* LXYFilterImageViewTests.m */; };
 		8908D66F1F9F2007005A8EB0 /* LXYFilterImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D66E1F9F2007005A8EB0 /* LXYFilterImageViewUITests.m */; };
-		8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */; };
-		89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2A41FA18AAC006769EA /* UIView+Frame.m */; };
-		89D3A2B01FA1B6FE006769EA /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A2AF1FA1B6FE006769EA /* c.jpg */; };
-		89D3A2B31FA1B991006769EA /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */; };
-		89D3A2C31FA1C8DE006769EA /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */; };
-		89D3A2C41FA1C8DE006769EA /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */; };
-		89D3A2C51FA1C8DE006769EA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */; };
-		89D3A2C61FA1C8DE006769EA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */; };
-		89D3A2C71FA1C8DE006769EA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */; };
+		89767A3E1FA3207000E673A5 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89767A3A1FA3207000E673A5 /* c.jpg */; };
+		89767A3F1FA3207000E673A5 /* libLXYFilterViewSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89767A3C1FA3207000E673A5 /* libLXYFilterViewSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,22 +53,9 @@
 		8908D66A1F9F2007005A8EB0 /* LXYFilterImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXYFilterImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8908D66E1F9F2007005A8EB0 /* LXYFilterImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXYFilterImageViewUITests.m; sourceTree = "<group>"; };
 		8908D6701F9F2007005A8EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8908D6B51F9F3279005A8EB0 /* LXYFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYFilterView.h; sourceTree = "<group>"; };
-		8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYFuterView.m; sourceTree = "<group>"; };
-		89D3A2A31FA18AAC006769EA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		89D3A2A41FA18AAC006769EA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		89D3A2AF1FA1B6FE006769EA /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
-		89D3A2B11FA1B991006769EA /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
-		89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
-		89D3A2B81FA1C8DE006769EA /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		89D3A2BA1FA1C8DE006769EA /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		89D3A2BD1FA1C8DE006769EA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		89D3A2BF1FA1C8DE006769EA /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		89767A3A1FA3207000E673A5 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
+		89767A3C1FA3207000E673A5 /* libLXYFilterViewSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLXYFilterViewSDK.a; sourceTree = "<group>"; };
+		89767A3D1FA3207000E673A5 /* LXYFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYFilterView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89767A3F1FA3207000E673A5 /* libLXYFilterViewSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +107,8 @@
 		8908D6481F9F2006005A8EB0 /* LXYFilterImageView */ = {
 			isa = PBXGroup;
 			children = (
-				8908D67C1F9F230E005A8EB0 /* LXYFilter */,
+				89767A391FA3207000E673A5 /* img */,
+				89767A3B1FA3207000E673A5 /* libLXYFilterViewSDK */,
 				8908D64C1F9F2006005A8EB0 /* AppDelegate.h */,
 				8908D64D1F9F2006005A8EB0 /* AppDelegate.m */,
 				8908D64F1F9F2006005A8EB0 /* ViewController.h */,
@@ -166,59 +148,21 @@
 			path = LXYFilterImageViewUITests;
 			sourceTree = "<group>";
 		};
-		8908D67C1F9F230E005A8EB0 /* LXYFilter */ = {
+		89767A391FA3207000E673A5 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				89D3A2951FA18AAC006769EA /* Util */,
-				8908D6801F9F240B005A8EB0 /* img */,
-				8908D6B51F9F3279005A8EB0 /* LXYFilterView.h */,
-				8908D6B61F9F3279005A8EB0 /* LXYFuterView.m */,
-				89D3A2B11FA1B991006769EA /* MyCollectionViewCell.h */,
-				89D3A2B21FA1B991006769EA /* MyCollectionViewCell.m */,
-			);
-			path = LXYFilter;
-			sourceTree = "<group>";
-		};
-		8908D6801F9F240B005A8EB0 /* img */ = {
-			isa = PBXGroup;
-			children = (
-				89D3A2AF1FA1B6FE006769EA /* c.jpg */,
+				89767A3A1FA3207000E673A5 /* c.jpg */,
 			);
 			path = img;
 			sourceTree = "<group>";
 		};
-		89D3A2951FA18AAC006769EA /* Util */ = {
+		89767A3B1FA3207000E673A5 /* libLXYFilterViewSDK */ = {
 			isa = PBXGroup;
 			children = (
-				89D3A2B41FA1C8DE006769EA /* SVProgressHUD */,
-				89D3A2A31FA18AAC006769EA /* UIView+Frame.h */,
-				89D3A2A41FA18AAC006769EA /* UIView+Frame.m */,
+				89767A3C1FA3207000E673A5 /* libLXYFilterViewSDK.a */,
+				89767A3D1FA3207000E673A5 /* LXYFilterView.h */,
 			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		89D3A2B41FA1C8DE006769EA /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				89D3A2B71FA1C8DE006769EA /* SVProgressHUD */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		89D3A2B71FA1C8DE006769EA /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				89D3A2B81FA1C8DE006769EA /* SVIndefiniteAnimatedView.h */,
-				89D3A2B91FA1C8DE006769EA /* SVIndefiniteAnimatedView.m */,
-				89D3A2BA1FA1C8DE006769EA /* SVProgressAnimatedView.h */,
-				89D3A2BB1FA1C8DE006769EA /* SVProgressAnimatedView.m */,
-				89D3A2BC1FA1C8DE006769EA /* SVProgressHUD.bundle */,
-				89D3A2BD1FA1C8DE006769EA /* SVProgressHUD.h */,
-				89D3A2BE1FA1C8DE006769EA /* SVProgressHUD.m */,
-				89D3A2BF1FA1C8DE006769EA /* SVRadialGradientLayer.h */,
-				89D3A2C01FA1C8DE006769EA /* SVRadialGradientLayer.m */,
-			);
-			path = SVProgressHUD;
+			path = libLXYFilterViewSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,11 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D3A2B01FA1B6FE006769EA /* c.jpg in Resources */,
 				8908D6591F9F2006005A8EB0 /* LaunchScreen.storyboard in Resources */,
-				89D3A2C51FA1C8DE006769EA /* SVProgressHUD.bundle in Resources */,
 				8908D6561F9F2006005A8EB0 /* Assets.xcassets in Resources */,
 				8908D6541F9F2006005A8EB0 /* Main.storyboard in Resources */,
+				89767A3E1FA3207000E673A5 /* c.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,15 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8908D6511F9F2006005A8EB0 /* ViewController.m in Sources */,
-				89D3A2C41FA1C8DE006769EA /* SVProgressAnimatedView.m in Sources */,
-				89D3A2B31FA1B991006769EA /* MyCollectionViewCell.m in Sources */,
-				89D3A2C31FA1C8DE006769EA /* SVIndefiniteAnimatedView.m in Sources */,
 				8908D64E1F9F2006005A8EB0 /* AppDelegate.m in Sources */,
 				8908D64B1F9F2006005A8EB0 /* main.m in Sources */,
-				89D3A2C71FA1C8DE006769EA /* SVRadialGradientLayer.m in Sources */,
-				8908D6B71F9F3279005A8EB0 /* LXYFuterView.m in Sources */,
-				89D3A2C61FA1C8DE006769EA /* SVProgressHUD.m in Sources */,
-				89D3A2AC1FA18AAC006769EA /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +441,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXYFilterImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LXYFilterImageView/libLXYFilterViewSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.LXYFilterImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -516,6 +456,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXYFilterImageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LXYFilterImageView/libLXYFilterViewSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.LXYFilterImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
